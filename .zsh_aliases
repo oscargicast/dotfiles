@@ -1,0 +1,45 @@
+# Emacs
+alias emacs='emacs -nw'
+
+# Play sound after command
+alias s='terminal-notifier -title "🚀" -message "Task accomplished!" -sound Ping';
+
+# Virtualenv3
+alias virtualenv3='virtualenv --python=python3'
+
+# Django
+alias pm='python manage.py'
+alias pmr='python manage.py runserver'
+alias pms='python manage.py shell'
+alias pmt='python manage.py test'
+alias pmsy='python manage.py syncdb --all --noinput'
+
+# Redis
+alias redis-server='~/redis/src/redis-server'
+alias redis-cli='~/redis/src/redis-cli'
+alias redis-sentinel='~/redis/src/redis-sentinel'
+alias redis-benchmark='~/redis/src/redis-benchmark'
+alias redis-check-aof='~/redis/src/redis-check-aof'
+alias redis-check-dump='~/redis/src/redis-check-dump'
+
+# Memcached
+alias memcached='~/memcached-1.4.25/memcached'
+
+# Android Studio
+alias android='$HOME/android-studio/bin/studio.sh'
+alias adb=$HOME/android-sdk/platform-tools/adb
+
+# Arduino
+alias arduino='~/arduino-1.0.6/arduino'
+
+# Glance
+alias glances='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock:ro --pid host --network host -it docker.io/nicolargo/glances'
+
+# Dockly
+alias dockly='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock lirantal/dockly'
+
+# Docker
+alias docker-clean='docker container ls -a -q || docker container stop $(docker container ls -a -q) && docker system prune -a -f --volumes'
+
+# Trinity 
+alias trinity='~/trinity/trinity-desktop-0.4.6.AppImage'
