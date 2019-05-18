@@ -15,11 +15,8 @@ if [ -f "$HOME/.bin/tmuxinator.zsh" ]; then
 fi;
 
 # Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-
-if [[ -d $PYENV_ROOT ]]; then
-	export PATH="$PYENV_ROOT/bin:$PATH"
-	# Please make sure is placed toward the end.
+CPPFLAGS="-I$(brew --prefix zlib)/include"
+if command -v pyenv 1>/dev/null 2>&1; then
 	eval "$(pyenv init -)"
 	eval "$(pyenv virtualenv-init -)"
 fi
