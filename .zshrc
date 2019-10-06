@@ -104,6 +104,7 @@ antigen apply
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
+export LANG='en_US.UTF-8'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

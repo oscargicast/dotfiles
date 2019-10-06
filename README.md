@@ -8,3 +8,8 @@ If this is your fisrt time, you need to install brew dependencies.
 ```
 source brew.sh
 ```
+
+To update our dotfiles.
+```
+source bootstrap.sh
+```

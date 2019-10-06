@@ -39,6 +39,12 @@ if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]; then
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && vim +PluginInstall +qall &>/dev/null;
 fi;
 
+# Space Vim
+if [ ! -d "$HOME/.SpaceVim.d/init.toml" ]; then
+	echo "Install SpaceVim 🚀";
+  curl -sLf https://spacevim.org/install.sh | zsh
+fi;
+
 # Add global gitignore
 if [ -d "$HOME/.gitignore_global" ]; then
 	echo "Set global gitignore 🚀";
